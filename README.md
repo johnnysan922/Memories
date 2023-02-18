@@ -1,70 +1,29 @@
-# Getting Started with Create React App
+# Memories
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A MERN stack social media application that allows users to post interesting events that happened in their lives.
 
-## Available Scripts
+The project is comprised of two applications. The client(frontend) side and the server(backend) side
 
-In the project directory, you can run:
+## Utilized
 
-### `npm start`
+### Frontend
+- `npx create-react-app ./` inside 'client' directory to create react project
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Backend
+- `npm init -y` inside 'server' directory creates empty 'package.json' file
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Frontend Dependencies
+- `npm i axios moment react-file-base64 redux redux-thunk`
+  - `axios` for making API requests
+  - `moment` library for working with time/date
+  - `react-file-base64` for converting images
+  - `redux`
+  - `redux-thunk` for async actions using redux
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Backend Dependencies
+- `npm i body-parser cors express mongoose nodemon`
+  - `body-parser` enables sending POST requests
+  - `cors` enables cross origin requests
+  - `express` as a framework for creating routing of application
+  - `mongoose` to create models for posts
+  - `nodemon` so we dont have to reset server after EVERY change
