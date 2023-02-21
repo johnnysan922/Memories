@@ -2,15 +2,20 @@ import React, {useState} from 'react'
 import useStyles from './styles'
 import { TextField, Button, Typography, Paper } from '@material-ui/core';
 import FileBase from 'react-file-base64'
+import { useDispatch } from 'react-redux';
+import { createPost } from '../../actions/posts';
 
 function Form() {
     const classes = useStyles();
+    const dispatch = useDispatch();
     const [postData, setPostData] = useState({
         creator: '', title: '', message: '', tag: '', selectedFile: ''
     });
 
-    const handleSubmit = () => {
+    const handleSubmit = (e) => {
+        e.preventDefault();         //prevents refresh in browser
 
+        dispatch(createPost(postData));
     }
 
     const clear = () => {
@@ -41,8 +46,8 @@ function Form() {
                 />
             </div>
 
-            <Button className={classes.buttonSubmit} variant='contained' color='primary' size='large' type='submit' fullWidth >Submit</Button>
-            <Button variant='contained' color='secondary' size='small' onClick={clear} fullWidth >Clear</Button>
+            <Button className={classes.buttonSubmit} onClick={handleSubmit} variant='contained' color='primary' size='large' type='submit' fullWidth >Submit</Button>
+            <Button onClick={clear} variant='contained' color='secondary' size='small' fullWidth >Clear</Button>
 
         </form>
     </Paper>
