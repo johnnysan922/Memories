@@ -7,7 +7,12 @@ The project is comprised of two applications. The client(frontend) side and the 
 ## Utilized
 - MongoDB (database)
   - `CONNECTION_URL` obtained by clicking 'connect' on desired cluster
-  - Must grant database access AND IP access
+  - Must grant database access AND IP access to connect to mongoose
+- Express
+- React
+  - redux
+  - material ui
+- Node
 
 ### Frontend
 - `npx create-react-app ./` inside 'client' directory to create react project
@@ -22,6 +27,10 @@ The project is comprised of two applications. The client(frontend) side and the 
   - `react-file-base64` for converting images
   - `redux`
   - `redux-thunk` for async actions using redux
+- `npm i react-redux`
+  - for hooks and dispatching actions
+- `npm install @material-ui/core`
+- `npm install @mui/material @emotion/react @emotion/styled`
 
 ## Backend Dependencies
 - `npm i body-parser cors express mongoose nodemon`
