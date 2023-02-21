@@ -5,6 +5,9 @@ A MERN stack social media application that allows users to post interesting even
 The project is comprised of two applications. The client(frontend) side and the server(backend) side
 
 ## Utilized
+- MongoDB (database)
+  - `CONNECTION_URL` obtained by clicking 'connect' on desired cluster
+  - Must grant database access AND IP access
 
 ### Frontend
 - `npx create-react-app ./` inside 'client' directory to create react project
@@ -25,5 +28,5 @@ The project is comprised of two applications. The client(frontend) side and the 
   - `body-parser` enables sending POST requests
   - `cors` enables cross origin requests
   - `express` as a framework for creating routing of application
-  - `mongoose` to create models for posts
+  - `mongoose` to create models for POST's
   - `nodemon` so we dont have to reset server after EVERY change
