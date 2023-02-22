@@ -16,11 +16,14 @@ The project is comprised of two applications. The client(frontend) side and the 
 
 ### Frontend
 - `npx create-react-app ./` inside 'client' directory to create react project
+- `npm start` to test the frontend application
 
 ### Backend
 - `npm init -y` inside 'server' directory creates empty 'package.json' file
+- `npm start` to test the backend application
 
 ## What I learned
+- How to properly organize files/folders in larger projects
 - Learned how to connect and deploy the application using MongoDB
 - How to update existing documents in a database using `router.patch()`
 

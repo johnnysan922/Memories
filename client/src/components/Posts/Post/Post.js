@@ -6,9 +6,8 @@ import DeleteIcon from '@mui/icons-material/Delete';
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 import moment from 'moment';
 
-function Post({post}) {
+function Post({post, setCurrentId}) {
     const classes = useStyles();
-
 
   return (
     <Card className={classes.card}>
@@ -20,7 +19,7 @@ function Post({post}) {
         </div>
 
         <div className={classes.overlay2}>
-            <Button style={{color: 'white'}} size='small' onClick={() => {}} >
+            <Button style={{color: 'white'}} size='small' onClick={() => setCurrentId} >
                 <MoreHorizIcon fontSize='default'  />
             </Button>
         </div>
