@@ -21,6 +21,7 @@ The project is comprised of two applications. The client(frontend) side and the 
 ### Backend
 - `npm init -y` inside 'server' directory creates empty 'package.json' file
 - `npm start` to test the backend application
+- `npm i dotenv` to store **IMPORTANT** local variables/information
 
 ## What I learned
 - How to properly organize files/folders in larger projects
@@ -35,8 +36,8 @@ The project is comprised of two applications. The client(frontend) side and the 
           }
       }
   ```
-- How to make code more scaleable and error prone
-  - Using constants variables for strings such POST types
+- How to make code more scaleable and error prone by using **constants variables** for strings such POST types
+- How to use the `.gitignore` file to ignore files/folders to prevent them from being uploaded to github
 
 ## Frontend Dependencies
 - `npm i axios moment react-file-base64 redux redux-thunk`
