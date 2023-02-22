@@ -35,6 +35,8 @@ The project is comprised of two applications. The client(frontend) side and the 
           }
       }
   ```
+- How to make code more scaleable and error prone
+  - Using constants variables for strings such POST types
 
 ## Frontend Dependencies
 - `npm i axios moment react-file-base64 redux redux-thunk`
