@@ -11,7 +11,7 @@ function Form({ currentId, setCurrentId }) {
     const post = useSelector((state) => currentId ? state.posts.find((p) => p._id === currentId) : null);
     
     const [postData, setPostData] = useState({
-        creator: '', title: '', message: '', tag: '', selectedFile: ''
+        creator: '', title: '', message: '', tags: '', selectedFile: ''
     });
 
     useEffect(() => {
@@ -30,13 +30,14 @@ function Form({ currentId, setCurrentId }) {
     }
 
     const clear = () => {
-
+        setCurrentId(null);
+        setPostData({creator: '', title: '', message: '', tags: '', selectedFile: ''});
     }
 
   return (
     <Paper className={classes.paper}>
         <form className={`${classes.root} ${classes.form}`} autoComplete='off' noValidate onSubmit={handleSubmit}>
-            <Typography variant='h6'>Creating a Memory</Typography>
+            <Typography variant='h6'>{currentId? `Editing '${post.title}' Memory`: 'Creating a Memory'}</Typography>
 
             <TextField name='creator' 
             variant='outlined' 
