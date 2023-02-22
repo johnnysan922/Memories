@@ -74,3 +74,6 @@ Deploy **backend** first and then **frontend**.
 
 ### Netlify (Frontend)
 - Change API `url` from local url to deployed url (`../src/api.index.js`)
+- Run `npm run build` to create a production version of frontend application
+- Drag and drop `build` folder on Netlify
+- The frontend is now deployed
