@@ -27,6 +27,7 @@ function Form({ currentId, setCurrentId }) {
         else{
             dispatch(createPost(postData));
         }
+        clear();    //clears form after submit
     }
 
     const clear = () => {
