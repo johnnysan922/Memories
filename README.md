@@ -58,3 +58,6 @@ The project is comprised of two applications. The client(frontend) side and the 
   - `express` as a framework for creating routing of application
   - `mongoose` to create models for POST's
   - `nodemon` so we dont have to reset server after EVERY change
+
+## Deployment
+- 
