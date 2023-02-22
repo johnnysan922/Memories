@@ -26,6 +26,15 @@ The project is comprised of two applications. The client(frontend) side and the 
 - How to properly organize files/folders in larger projects
 - Learned how to connect and deploy the application using MongoDB
 - How to update existing documents in a database using `router.patch()`
+- `&nbsp;` is used for spacing that can be interpreted by **JSX**
+- How to use breakpoints(media queries). Runs CSS for devices that are smaller than 'sm'
+  ```
+  [theme.breakpoints.down('sm')]:{
+        mainContainer: {
+            flexDirection: 'column-reverse'
+          }
+      }
+  ```
 
 ## Frontend Dependencies
 - `npm i axios moment react-file-base64 redux redux-thunk`
