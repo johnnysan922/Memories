@@ -20,6 +20,10 @@ The project is comprised of two applications. The client(frontend) side and the 
 ### Backend
 - `npm init -y` inside 'server' directory creates empty 'package.json' file
 
+## What I learned
+- Learned how to connect and deploy the application using MongoDB
+- How to update existing documents in a database using `router.patch()`
+
 ## Frontend Dependencies
 - `npm i axios moment react-file-base64 redux redux-thunk`
   - `axios` for making API requests
@@ -30,7 +34,7 @@ The project is comprised of two applications. The client(frontend) side and the 
 - `npm i react-redux`
   - for hooks and dispatching actions
 - `npm install @material-ui/core`
-- `npm install @mui/material @emotion/react @emotion/styled`
+- `npm install @mui/icons-material @mui/material @emotion/react @emotion/styled`
 
 ## Backend Dependencies
 - `npm i body-parser cors express mongoose nodemon`
