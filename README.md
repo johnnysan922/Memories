@@ -62,10 +62,14 @@ The project is comprised of two applications. The client side(frontend) and the 
   - `nodemon` so we dont have to reset server after EVERY change
 
 ## Deployment
-
+Deploy **backend** first and then **frontend**.
 ### Heroku (Backend)
 - Click on 'New' on the top right corner > 'Create new app' and input values for project
 - Make sure Heroku CLI is installed and set the Path in environment variables
 - Follow the steps and commands on the Heroku site. (in the SERVER folder)
+  - Create a new heroku git repo in the server applicaton
+  - Follow commands
+- It should deploy
+  - **Note**: MongoDB Atlas cluster needs to have Heroku IP address whitelisted
 
 ### Netlify (Frontend)

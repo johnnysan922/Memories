@@ -15,9 +15,9 @@ app.use(cors());
 
 app.use('/posts', postRoutes);
 
-app.get('/' , (req, res) => {
+app.get('/', (req, res) => {
     res.send('Hello to Memories API')
-})
+});
 
 // process.evn.PORT is taken care of by Heroku || 5000 for testing on local machine
 const PORT = process.env.PORT || 5000;
