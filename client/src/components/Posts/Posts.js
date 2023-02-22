@@ -22,7 +22,6 @@ function Posts({ setCurrentId }) {
             ))}
         </Grid>
     )
-    
   )
 }
 

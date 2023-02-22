@@ -8,5 +8,4 @@ router.get('/', getPosts);
 router.post('/', createPost);
 router.patch('/:id', updatePost);       //to edit we need the id
 
-
 export default router;
