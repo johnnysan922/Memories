@@ -2,7 +2,7 @@
 
 A MERN stack social media application that allows users to post interesting events that happened in their lives.
 
-The project is comprised of two applications. The client(frontend) side and the server(backend) side
+The project is comprised of two applications. The client side(frontend) and the server side(backend).
 
 ## Utilized
 - MongoDB (database)
