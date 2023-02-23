@@ -71,6 +71,12 @@ Deploy **backend** first and then **frontend**.
   - Follow commands
 - It should deploy
   - **Note**: MongoDB Atlas cluster needs to have Heroku IP address whitelisted
+- To redeploy:
+  ```
+  git add .
+  git commit -am "MESSAGE"
+  git push heroku master
+  ```
 
 ### Netlify (Frontend)
 - Change API `url` from local url to deployed url (`../src/api.index.js`)
