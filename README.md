@@ -78,6 +78,21 @@ Deploy **backend** first and then **frontend**.
   git push heroku master
   ```
 
+### Render (Backend)
+- Click on **'New +'** > **'Web Service'** on the top right corner
+- Connect/Link your Github account
+- Connect to the desired repository
+- In the details form page:
+  - Choose a name for the web service (preferably the same as the project name)
+  - Branch: `main` (default)
+  - Runtime: `Node` (default)
+  - Root directory: `server`
+  - Build commmand: `$ yarn` (default)
+  - Start command: `npm start`
+- Click 'Create Web Service'
+- Store Environment Variables(secret keys) in the 'Environment' tab on the left
+- Insert URL of web service, from the top left, into the frontend.
+
 ### Netlify (Frontend)
 - Change API `url` from local url to deployed url (`../src/api.index.js`)
 - Run `npm run build` to create a production version of frontend application
