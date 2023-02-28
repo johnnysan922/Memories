@@ -13,7 +13,7 @@ The project is comprised of two applications. The client side(frontend) and the 
   - redux
   - material ui
 - Node
-- Heroku (backend deployment)
+- Render (backend deployment) ~~Heroku (backend deployment)~~
 - Netlify (frontend deployment)
 
 ### Frontend
@@ -63,7 +63,7 @@ The project is comprised of two applications. The client side(frontend) and the 
 
 ## Deployment
 Deploy **backend** first and then **frontend**.
-### Heroku (Backend)
+### ~~Heroku (Backend)~~
 - Click on 'New' on the top right corner > 'Create new app' and input values for project
 - Make sure Heroku CLI is installed and set the Path in environment variables
 - Follow the steps and commands on the Heroku site. (in the SERVER folder)
