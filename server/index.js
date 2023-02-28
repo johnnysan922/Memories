@@ -27,4 +27,4 @@ mongoose.set('strictQuery', false);
 
 mongoose.connect(process.env.CONNECTION_URL)    // CONNECTION_URL obtained from mongodb
     .then(() => app.listen(PORT, () => console.log(`Server running on port: ${PORT}`)))
-    .catch((error) => console.log(error.message));
+    .catch((error) => console.log(error));
